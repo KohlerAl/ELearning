@@ -1,24 +1,8 @@
 namespace quizPrototype {
     window.addEventListener("load", handleLoad);
 
-
-    let formCriticism: HTMLFormElement;
-    let submitCriticism: HTMLButtonElement;
-
-    /* let questionsCriticism: string[][][] = [
-        [
-            ["Was ist der UG-Ansatz?", "Ein Forschungsfeld", "Eine Theorie", "Eine Hypothese"],
-            ["Ein Forschungsfeld"],
-            ["Hypothesen müssen falsifizierbar sein", "Für eine Theorie werden mehrere, miteinander verbundene Hypothesen benötigt"],
-            ["false"]
-        ], 
-        [
-            ["Welches Verhalten wird in den UG-Studien überwiegend untersucht?", "Situatives Verhalten, da sich Bedürfnisse jeden Augenblick ändern können", "Situationsübergreifendes Verhalten, da dieses überdauerende Nutzungsmuster erklärt"], 
-            ["Situationsübergreifendes Verhalten, da dieses überdauerende Nutzungsmuster erklärt"], 
-            ["Hint 1", "Hint 2"],
-            ["false"]
-        ]
-    ]; */
+    let form: HTMLFormElement;
+    let formsubmit: HTMLButtonElement;
 
     interface Question {
         question: string;
@@ -29,8 +13,7 @@ namespace quizPrototype {
         wrongBefore: boolean;
     }
 
-    let questionsG: Question[] = [];
-    let questionsC: Question[] = [
+    let questions: Question[] = [
         {
             "question": "Was ist der UG-Ansatz?",
             "Answer1": ["Ein Forschungsfeld"],
@@ -51,13 +34,13 @@ namespace quizPrototype {
 
     function handleLoad(): void {
         //Hello WOrld
-        formCriticism = <HTMLFormElement>document.querySelector("#criticism");
-        submitCriticism = <HTMLButtonElement>document.querySelector("#submitCriticism");
+        form = <HTMLFormElement>document.querySelector("#form");
+        formsubmit = <HTMLButtonElement>document.querySelector("#submitform");
 
-        submitCriticism.addEventListener("pointerup", checkQuiz);
+        formsubmit.addEventListener("pointerup", checkQuiz);
 
-        for (let i: number = 0; i < questionsC.length; i++) {
-            createElements(questionsC[i], i);
+        for (let i: number = 0; i < questions.length; i++) {
+            createElements(questions[i], i);
         }
     }
 
@@ -118,29 +101,14 @@ namespace quizPrototype {
             div.appendChild(tag3);
         }
 
-        formCriticism.insertBefore(div, formCriticism.firstChild);
+        form.insertBefore(div, form.firstChild);
     }
 
     function checkQuiz(_event: PointerEvent): void {
-        let target: HTMLElement = <HTMLElement>_event.target;
-        let id: string = target.id;
 
-        let formData: FormData | null;
-        let arr: Question[] | null;
-        switch (id) {
-            case ("submitGeneral"):
-                formData = new FormData(document.forms[0]);
-                arr = questionsG;
-                break;
-            case ("submitCriticism"):
-                formData = new FormData(document.forms[1]);
-                arr = questionsC;
-                break;
-            default:
-                formData = null;
-                arr = null;
-                break;
-        }
+        let formData: FormData | null = new FormData(document.forms[0]);
+        let arr: Question[] | null = questions;
+
 
         if (formData && arr) {
             console.log(formData);
@@ -157,9 +125,9 @@ namespace quizPrototype {
                 console.log(nmbr);
 
                 let answer: string = entry[1].toString();
-                
-                let id: string = item.id; 
-                let tag: HTMLLabelElement = <HTMLLabelElement>document.querySelector("[for='" + id + "']"); 
+
+                let id: string = item.id;
+                let tag: HTMLLabelElement = <HTMLLabelElement>document.querySelector("[for='" + id + "']");
 
 
                 if (arr[nmbr].right == answer) {
@@ -172,7 +140,7 @@ namespace quizPrototype {
                 else {
                     if (!item.classList.contains("wrong")) {
                         tag.classList.add("wrong");
-                        item.classList.add("wrong"); 
+                        item.classList.add("wrong");
 
                         let div: HTMLDivElement = <HTMLDivElement>document.querySelector(".question" + nmbr);
                         let p: HTMLParagraphElement = document.createElement("p");

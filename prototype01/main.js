@@ -2,10 +2,9 @@
 var quizPrototype;
 (function (quizPrototype) {
     window.addEventListener("load", handleLoad);
-    let formCriticism;
-    let submitCriticism;
-    let questionsG = [];
-    let questionsC = [
+    let form;
+    let formsubmit;
+    let questions = [
         {
             "question": "Was ist der UG-Ansatz?",
             "Answer1": ["Ein Forschungsfeld"],
@@ -25,11 +24,11 @@ var quizPrototype;
     ];
     function handleLoad() {
         //Hello WOrld
-        formCriticism = document.querySelector("#criticism");
-        submitCriticism = document.querySelector("#submitCriticism");
-        submitCriticism.addEventListener("pointerup", checkQuiz);
-        for (let i = 0; i < questionsC.length; i++) {
-            createElements(questionsC[i], i);
+        form = document.querySelector("#form");
+        formsubmit = document.querySelector("#submitform");
+        formsubmit.addEventListener("pointerup", checkQuiz);
+        for (let i = 0; i < questions.length; i++) {
+            createElements(questions[i], i);
         }
     }
     function createElements(_question, _index) {
@@ -79,27 +78,11 @@ var quizPrototype;
             tag3.setAttribute("for", "question" + _index + "answer3");
             div.appendChild(tag3);
         }
-        formCriticism.insertBefore(div, formCriticism.firstChild);
+        form.insertBefore(div, form.firstChild);
     }
     function checkQuiz(_event) {
-        let target = _event.target;
-        let id = target.id;
-        let formData;
-        let arr;
-        switch (id) {
-            case ("submitGeneral"):
-                formData = new FormData(document.forms[0]);
-                arr = questionsG;
-                break;
-            case ("submitCriticism"):
-                formData = new FormData(document.forms[1]);
-                arr = questionsC;
-                break;
-            default:
-                formData = null;
-                arr = null;
-                break;
-        }
+        let formData = new FormData(document.forms[0]);
+        let arr = questions;
         if (formData && arr) {
             console.log(formData);
             console.log(formData.get("question0"));

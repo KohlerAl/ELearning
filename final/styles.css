@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.menu, .footer {
+    background-color: #BAC8D3;
+    color: #fff;
+    text-align: center;
+    min-width: 170px;
+}
+
+.menu h1, .footer h1 {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.menu a, .footer a {
+    font-size: 18pt; 
+}
+
+.menu p, .footer p {
+    font-size: 13pt; 
+    padding: 5px;
+    color: #7d8790;
+}
+
+.menu, .footer, .main {
+    padding: 10px;
+    height: 100%;
+}
+
+.menu-wrapper {
+    margin-top: 150px;
+}
+
+.main {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main .sub-headline {
+    font-size: 13pt; 
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 24pt;
+    text-align: center;
+}
+
+.main h2 {
+    font-size: 19pt;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+
+.main p {
+    margin-top: 10px;
+}
+
+.text-block {
+    padding-top: 100px;
+}
+
+.main .text-block {
+    font-size: 13pt;
+}
+
+button {
+    display: block;
+    border-color: #9673A6;
+}
+
+.button-wrapper {
+    width: 100%;
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.active {
+    border: 3px solid #9673A6;
+    border-radius: 10px;
+    color: #7d8790
+}
+
+.start-page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main a {
+    color: #000;
+}
