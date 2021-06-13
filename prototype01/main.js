@@ -130,7 +130,7 @@ var quizPrototype;
                         if (arr[nmbr].Answer1[0] == answer) {
                             p.innerHTML = arr[nmbr].Answer1[1];
                         }
-                        else if (arr[nmbr].Answer1[0] == answer) {
+                        else if (arr[nmbr].Answer2[0] == answer) {
                             p.innerHTML = arr[nmbr].Answer2[1];
                         }
                         else if (arr[nmbr].Answer3[0] == answer) {
