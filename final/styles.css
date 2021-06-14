@@ -123,14 +123,6 @@ button {
     color: #000;
 }
 
-.wrong {
-    color: #FF6666; 
-}
-
-.right {
-    color: #B3FF66; 
-}
-
 .hint {
     color: grey; 
 }
@@ -150,6 +142,14 @@ button {
 
 #form input[type="radio"]:checked + label {
     color: #FFB570; 
+}
+
+#form input[type="radio"]:checked + label.right {
+    color: #03b553; 
+}
+
+#form input[type="radio"]:checked + label.wrong {
+    color: #d0220b; 
 }
 
 input[type="radio"] {
