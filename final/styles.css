@@ -119,12 +119,20 @@ button {
     overflow: hidden;
 }
 
+.lexikon h2 {
+    margin-top: 70px;
+}
+
 .main a {
     color: #000;
 }
 
 .hint {
     color: grey; 
+}
+
+.main a {
+    color: #9673A6;
 }
 
 #form h2 {
