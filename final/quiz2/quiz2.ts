@@ -31,22 +31,6 @@ namespace quizPrototype {
             "wrongBefore": false
         },
         {
-            "question": "Welches Verhalten wird in den Uses-and-Gratifications-Studien überwiegend untersucht?",
-            "Answer1": ["Situatives Verhalten, da sich Bedürfnisse jeden Augenblick ändern können", "Eine einzelne Nutzungssituation kann sehr spezifisch und damit schwer vergleichbar sein. "],
-            "Answer2": ["Situationsübergreifendes Verhalten, da dieses überdauerende Nutzungsmuster erklärt"],
-            "Answer3": [],
-            "right": "Situationsübergreifendes Verhalten, da dieses überdauerende Nutzungsmuster erklärt",
-            "wrongBefore": false
-        },
-        {
-            "question": "Welches Verhalten wird in den Uses-and-Gratifications-Studien überwiegend untersucht?",
-            "Answer1": ["Situatives Verhalten, da sich Bedürfnisse jeden Augenblick ändern können", "Eine einzelne Nutzungssituation kann sehr spezifisch und damit schwer vergleichbar sein. "],
-            "Answer2": ["Situationsübergreifendes Verhalten, da dieses überdauerende Nutzungsmuster erklärt"],
-            "Answer3": [],
-            "right": "Situationsübergreifendes Verhalten, da dieses überdauerende Nutzungsmuster erklärt",
-            "wrongBefore": false
-        },
-        {
             "question": "Welcher Trugschluss entsteht durch die Medienzentrierte Sichtweise? ",
             "Answer1": ["Medien werden für ein einziges, bestimmtes Bedürfnis geschaffen"],
             "Answer2": ["Medien erfüllen viele verschiedene Bedürfnisse", "Medien werden meist für ein bestimmtes Bedürfnis konzipiert. Was der Nutzer dann aber mit diesem Angebot macht, ist eine ganz andere Sache. "],
@@ -218,7 +202,7 @@ namespace quizPrototype {
                         }
 
                         else if (arr[nmbr].Answer3[0] == answer) {
-                            p.innerHTML = arr[nmbr].Answer2[1];
+                            p.innerHTML = arr[nmbr].Answer3[1];
                         }
 
                         p.classList.add("hint");

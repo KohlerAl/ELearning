@@ -178,7 +178,7 @@ namespace quizPrototype {
                         }
 
                         else if (arr[nmbr].Answer3[0] == answer) {
-                            p.innerHTML = arr[nmbr].Answer2[1];
+                            p.innerHTML = arr[nmbr].Answer3[1];
                         }
 
                         p.classList.add("hint");
