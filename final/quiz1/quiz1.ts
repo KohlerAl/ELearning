@@ -17,22 +17,22 @@ namespace quizPrototype {
         {
             "question": "Was ist die grundlegende Frage des Uses-and-Gratifications-Ansatzes?",
             "Answer1": ["Warum nutzen Menschen bestimmte Medien?"],
-            "Answer2": ["Warum werden bestimmte Inhalte nur in ausgewählten Medien gezeigt?", "Mit dieser Frage befassen sich andere Studien."],
+            "Answer2": ["Warum werden bestimmte Inhalte nur in ausgewählten Medien gezeigt?", "Mit dieser Frage befassen sich andere Studien"],
             "Answer3": [],
             "right": "Warum nutzen Menschen bestimmte Medien?",
             "wrongBefore": false
         },
         {
             "question": "Warum nutzen Menschen nach dieser Grundannahme Medien?",
-            "Answer1": ["Um bestimmte Bedürfnisse zu befriedigen."],
-            "Answer2": ["Um einen Überblick über die Inhalte zu bekommen.", "Für was steht „Gratification“ im Uses-and-Gratifications-Ansatz?"],
+            "Answer1": ["Um bestimmte Bedürfnisse zu befriedigen"],
+            "Answer2": ["Um einen Überblick über die Inhalte zu bekommen", "Für was steht „Gratification“ im Uses-and-Gratifications-Ansatz?"],
             "Answer3": [],
-            "right": "Um bestimmte Bedürfnisse zu befriedigen.",
+            "right": "Um bestimmte Bedürfnisse zu befriedigen",
             "wrongBefore": false
         },
         {
             "question": "Was sind die zwei zentralen Bedürfnisse?",
-            "Answer1": ["Ablenkung und Befriedigung", "In diesem Fall sind andere Bedürfnisse gemeint."],
+            "Answer1": ["Ablenkung und Befriedigung", "In diesem Fall sind andere Bedürfnisse gemeint"],
             "Answer2": ["Information und Unterhaltung"],
             "Answer3": [],
             "right": "Information und Unterhaltung",
@@ -56,15 +56,15 @@ namespace quizPrototype {
         },
         {
             "question": "Was wird bei der dritten Grundannahme betrachtet?",
-            "Answer1": ["Die Konkurrenz zwischen Medien und anderen Mitteln der Bedürfnisbefriedigung."],
-            "Answer2": ["Wie viel Prozent der menschlichen Bedürfnisse durch Medien befriedigt werden können.", "Bei dieser Grundannahme spielt die Entscheidung des Nutzers für verschiedene Mittel der Bedürfnisbefriedigung eine große Rolle."],
+            "Answer1": ["Die Konkurrenz zwischen Medien und anderen Mitteln der Bedürfnisbefriedigung"],
+            "Answer2": ["Wie viel Prozent der menschlichen Bedürfnisse durch Medien befriedigt werden können", "Bei dieser Grundannahme spielt die Entscheidung des Nutzers für verschiedene Mittel der Bedürfnisbefriedigung eine große Rolle."],
             "Answer3": [],
-            "right": "Die Konkurrenz zwischen Medien und anderen Mitteln der Bedürfnisbefriedigung.",
+            "right": "Die Konkurrenz zwischen Medien und anderen Mitteln der Bedürfnisbefriedigung",
             "wrongBefore": false
         },
         {
             "question": "Wie können menschliche Bedürfnisse ermittelt werden?",
-            "Answer1": ["Durch Annahme anderer.", "Keiner kennt die Bedürfnisse eines Menschen besser als er selbst."],
+            "Answer1": ["Durch Annahme anderer", "Keiner kennt die Bedürfnisse eines Menschen besser als er selbst."],
             "Answer2": ["Durch Selbstauskunft"],
             "Answer3": [],
             "right": "Durch Selbstauskunft",

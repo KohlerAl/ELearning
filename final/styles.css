@@ -16,6 +16,10 @@ a:visited {
     color: #fff;
 }
 
+img {
+    max-width: 50%;
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -40,11 +44,11 @@ a:visited {
 }
 
 .menu a, .footer a {
-    font-size: 18pt; 
+    font-size: 18pt;
 }
 
 .menu p, .footer p {
-    font-size: 13pt; 
+    font-size: 13pt;
     padding: 5px;
     color: #7d8790;
 }
@@ -64,7 +68,7 @@ a:visited {
 }
 
 .main .sub-headline {
-    font-size: 13pt; 
+    font-size: 13pt;
     text-align: center;
 }
 
@@ -128,7 +132,7 @@ button {
 }
 
 .hint {
-    color: grey; 
+    color: grey;
 }
 
 .main a {
@@ -136,28 +140,28 @@ button {
 }
 
 #form h2 {
-    border: 2px solid black; 
+    border: 2px solid black;
     border-radius: 10px;
     padding: 20px 10px;
     font-size: 12pt;
     text-align: center;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 #form input.question {
     margin-bottom: 20px;
 }
 
-#form input[type="radio"]:checked + label {
-    color: #FFB570; 
+#form input[type="radio"]:checked+label {
+    color: #FFB570;
 }
 
-#form input[type="radio"]:checked + label.right {
-    color: #03b553; 
+#form input[type="radio"]:checked+label.right {
+    color: #03b553;
 }
 
-#form input[type="radio"]:checked + label.wrong {
-    color: #d0220b; 
+#form input[type="radio"]:checked+label.wrong {
+    color: #d0220b;
 }
 
 input[type="radio"] {
